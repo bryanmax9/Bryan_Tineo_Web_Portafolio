@@ -1,0 +1,600 @@
+@charset "utf-8";
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+
+  /* only works if there is bsoluty positioned in relation to body */
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("https://th.bing.com/th/id/R.e1248942f7c332ce5d149fff6d3a0ab8?rik=xsrJRyC3KRekLQ&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1533134486753-c833f0ed4866%3fixlib%3drb-1.2.1%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax&ehk=hI2obf29RaqkEbXtuT%2fHF76kSjRvDw24yH2TK1vaNIQ%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.active {
+  font-weight: bold;
+  color: grey;
+}
+.text-container p:nth-child(1) {
+  font-family: calibri;
+  font-weight: bold;
+  color: grey;
+  font-size: 84px;
+}
+.text-container p:nth-child(2) {
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: -5px;
+  color: white;
+  font-size: 121px;
+}
+.text-container p:nth-child(3) {
+  font-family: myriad pro regular;
+  color: grey;
+  font-size: 56px;
+  line-height: 66px;
+}
+.text-container p {
+  line-height: 54px;
+  margin: 45px 0px 25px;
+}
+.text-container {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
+}
+.text-container button {
+  width: 206px;
+  height: 66px;
+  border-radius: 10px;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 24px;
+  outline: none;
+  margin: 0px 10px;
+}
+.hire-btn {
+  border: 2px solid #373636;
+  color: grey;
+}
+.down-cv {
+  background-color: black;
+  color: white;
+  border: none;
+}
+button:active {
+  transform: scale(1.1);
+}
+.about-container {
+  width: 80%;
+  height: 366px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-container img {
+  height: 323px;
+}
+.about-text {
+  width: 550px;
+  padding: 0px 5px;
+}
+.about-text p:nth-child(1) {
+  color: grey;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 0px;
+}
+.about-text p:nth-child(2) {
+  color: grey;
+  font-size: 26px;
+  font-family: myriad pro;
+  font-weight: bold;
+  line-height: 5px;
+}
+.about-text p:nth-child(3),
+.about-text p:nth-child(4) {
+  color: grey;
+  font-family: calibri;
+  font-size: 20px;
+}
+.about-text button {
+  width: 120px;
+  height: 40px;
+  color: white;
+  outline: none;
+  border: none;
+  font-family: calibri;
+  background-color: black;
+  font-size: 1rem;
+}
+
+.services {
+  height: 650px;
+  background-color: white;
+  padding: 2% 10% 0px 10%;
+}
+.services-text p:nth-child(1) {
+  font-family: calibri;
+  font-weight: bold;
+  color: grey;
+  font-size: 50px;
+  line-height: 0px;
+}
+.services-text p:nth-child(2) {
+  font-family: calibri;
+  font-weight: bold;
+  color: grey;
+  font-size: 25px;
+  line-height: 5px;
+}
+.services-text p:nth-child(3) {
+  font-family: calibri;
+  color: grey;
+  font-size: 1.1rem;
+}
+.services-text {
+  width: 500px;
+  margin: 50px 0px;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+  width: 24rem;
+  height: 21rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+.box-1 {
+  background-image: url("https://thumbs.dreamstime.com/b/ebook-icon-filled-website-design-mobile-app-development-book-collection-isolated-black-background-157807597.jpg");
+}
+.box-2 {
+  background-image: url("https://thumbs.dreamstime.com/b/responsive-website-icon-filled-responsive-website-icon-website-design-mobile-app-development-responsive-website-icon-157815039.jpg");
+}
+
+.box-3 {
+  background-image: url("https://media.istockphoto.com/vectors/newspaper-flat-vector-icon-news-symbol-logo-illustration-vector-id814956364?k=6&m=814956364&s=170667a&w=0&h=EpzxStgmSKeUKheeYA8csSCi_OGhF4_ChswJRejVcpk=");
+}
+
+.box-1 span,
+.box-2 span,
+.box-3 span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  font-weight: bold;
+}
+
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2) {
+  color: grey;
+  font-weight: bold;
+  font-family: calibri;
+  font-size: 2rem;
+  line-height: 0px;
+}
+.box-1 p:nth-child(3),
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3) {
+  font-family: calibri;
+  text-align: center;
+  width: 23rem;
+  height: 26rem;
+  margin: 0rem 0rem 1rem 0rem;
+  color: #d3d3d3;
+  font-weight: bold;
+  position: relative;
+  top: 12rem;
+  font-size: 1.2rem;
+}
+
+.box-1 button,
+.box-2 button,
+.box-3 button {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  outline: one;
+  border-radius: 10px;
+  position: relative;
+}
+
+.contact-me {
+  width: 100%;
+  height: 280px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("images/background-portafolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-me p {
+  color: white;
+  font-size: 30px;
+  font-family: calibri;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.contact-me button {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+footer p {
+  font-family: calibri;
+}
+footer p:nth-child(1) {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  line-height: 10px;
+}
+footer p:nth-child(2) {
+  font-size: 16px;
+  color: grey;
+  width: 600px;
+  text-align: center;
+}
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #778899;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+.social-icons {
+  display: flex;
+}
+.copyright {
+  color: #778899;
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+.social-icons i {
+  color: black;
+}
+.social-icons a:hover,
+.a-social-b a:hover {
+  background-color: black;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+}
+.social-icons a:hover i {
+  color: white;
+  transition: all ease 0.5s;
+}
+.a-social-b {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  transform: translateX(-50%);
+}
+
+.a-social-b a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0 px;
+  line-height: 0px;
+  background-color: white;
+  border: 1px solid #cbcbcb;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+.a-social-b i {
+  /* color: #2b2b2; */
+  font-size: 20px;
+}
+
+.nav.sticky {
+  position: fixed; /* para que se pegue en la cabezera de la pagina cuando scroleas */
+  background-color: rgba(255, 255, 255, 0.9); /* color transparente */
+  width: 90%; /* para que la barra se extienda en todo el ancho de la pagina */
+  z-index: 1000; /* esto es para que la barra no valla atras del contenido */
+}
+
+/* team implementation */
+
+.myteam {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column; /* make the title center in the top */
+}
+
+.myteam::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(red, rgb(236, 91, 236));
+  clip-path: circle(30% at right 70%);
+}
+.myteam::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(40, 141, 207), red);
+  clip-path: circle(20% at 10% 10%);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.container .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container .card:hover .content {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* border: 10px solid rgb(0, 0, 0, 0.25); */
+}
+
+.container .card .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.container .card .sci {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+
+.container .card .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.container .card:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.container .card .sci li a {
+  color: white;
+  font-size: 24px;
+}
+
+.myteam h1 {
+  font-family: Comic Sans MS;
+  font-weight: bold;
+}
+
+.hire-btn:hover {
+  box-shadow: 3px 1px 10px white;
+}
+.down-cv:hover {
+  box-shadow: 3px 1px 10px white;
+}
+
+.about-hire:hover {
+  color: black;
+  background-color: white;
+  border: 1px inset black;
+}
+
+.about-DwnRE:hover {
+  color: black;
+  background-color: white;
+  border: 1px inset black;
+}
+.ultimo-contactar:hover {
+  box-shadow: 3px 1px 10px white;
+}
+.leer-mas:hover {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none; /* to hide menu button */
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none; /* hide close button */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+
+  padding: 0 4.8rem;
+  position: relative;
+  height: 9rem;
+}
+.logo {
+  font-family: RoadTest;
+  color: black;
+  font-size: 2rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:visited {
+  color: black;
+  border-bottom: 5px solid black;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 9;
+  box-shadow: 0 1.2rem 3.2rem rgb(0, 0, 0, 0.03);
+}
+
+.sticky #home {
+  margin-top: 9.6rem;
+}

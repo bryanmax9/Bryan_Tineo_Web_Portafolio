@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="x-icon" href="images/bryanmax9_icon.png" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>App Proyects</title>
+    <link rel="stylesheet" href="apps.css" />
+    <link rel="stylesheet" href="queryapps.css" />
+  </head>
+
+  <body>
+    <section>
+      <nav class="nav sticky">
+        <a href="index.html" class="logo">Bryanmax9</a>
+        <ul>
+          <li><a href="index.html" id="casa">Home</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <div class="services">
+      <h1>Apps</h1>
+      <div style="position: relative; left: -200px; top: 2px">
+        <div class="mobile">
+          <div class="top"></div>
+          <div class="bottom" id="button"></div>
+          <div class="screen">
+            <div id="slider">
+              <a id="slide1"
+                ><img
+                  src="images/bannanas.jpg"
+                  alt="bannana Split Game screenshot"
+              /></a>
+              <a id="slide2"
+                ><img src="images/misionSolo.jpg" alt="Solo Mission screenshot"
+              /></a>
+              <a id="slide3"
+                ><img
+                  src="images/pinguinoLoco.png"
+                  alt="Crazy Penguin screenshot"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenido" style="display: flex">
+        <!-- <div class="contenedor" >
+          <h2>Active Worm Apps</h2>
+          <div style="text-align: center" style="display: block">
+            <img
+              src="images/bryanmax9_icon.png"
+              alt="app1"
+              width="100"
+              height="100"
+              style="clip-path: circle()"
+            />
+          </div>
+          <p>
+            Press the Home button of the phone to see Apps Preview and Details,
+            Double click to reset Preview.
+          </p>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".bottom").click(function () {
+          $(".screen").toggleClass("active");
+        });
+      });
+    </script>
+    <script src="apps.js"></script>
+
+    <section></section>
+  </body>
+</html>

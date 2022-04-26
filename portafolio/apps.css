@@ -1,0 +1,237 @@
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  height: 73vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("images/background-portafolio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo {
+  font-family: RoadTest;
+  color: black;
+  font-size: 2rem;
+}
+
+.active {
+  font-weight: bold;
+  color: grey;
+}
+
+.services {
+  width: 80%;
+
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  background-color: white;
+  flex-direction: column; /* make the title center in the top */
+  /* margin: 0; */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+
+  font-family: sans-serif;
+}
+
+.nav.sticky {
+  position: fixed; /* para que se pegue en la cabezera de la pagina cuando scroleas */
+  background-color: rgba(255, 255, 255, 0.9); /* color transparente */
+  width: 90%; /* para que la barra se extienda en todo el ancho de la pagina */
+  z-index: 1000; /* esto es para que la barra no valla atras del contenido */
+}
+/* ---------phone implementation ---------------------------- */
+
+.mobile {
+  position: relative;
+  width: 270px;
+  height: 480px;
+  background: #020c17;
+}
+
+.services h1 {
+  font-size: 3.5rem;
+  padding-top: 16rem;
+  padding-bottom: 60px;
+}
+
+.services p {
+  padding-bottom: 50px;
+}
+.top {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  height: 50px;
+  background: #efefef;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.top:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: #ccc;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #999;
+}
+.top:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  width: 40px;
+  height: 3px;
+  background: #333;
+  border: 2px solid #aaa;
+  border-radius: 3px;
+}
+.bottom {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: 50px;
+  background: #efefef;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.bottom:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border: 2px solid #999;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.screen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: 0.5s;
+}
+.screen.active img {
+  opacity: 1;
+}
+
+.screen:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  transform: skewX(-5deg);
+}
+
+.contenedor {
+  --gap: -6rem;
+  --width: 21rem;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.582);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  max-width: var(--width);
+  text-align: center;
+  position: relative;
+  left: 15rem;
+  top: -45rem;
+}
+
+.contenedor .videoItem__desc-title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contenedor p {
+  flex: 1 0 auto;
+  font-weight: 200;
+  line-height: 1.6;
+}
+.contenedor .videoItem__desc-title,
+.contenedor p {
+  margin-bottom: calc(var(--gap) * 2 / 3);
+}
+
+.inactivo {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.activo {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+#casa:hover {
+  color: black;
+  border-bottom: 5px solid black;
+}

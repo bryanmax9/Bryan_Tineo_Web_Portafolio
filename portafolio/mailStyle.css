@@ -1,0 +1,177 @@
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  height: 35vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("images/background-portafolio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: grey;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo {
+  font-family: RoadTest;
+  color: black;
+  font-size: 22px;
+}
+
+.active {
+  font-weight: bold;
+  color: grey;
+}
+
+.services {
+  height: 600px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.nav.sticky {
+  position: fixed; /* para que se pegue en la cabezera de la pagina cuando scroleas */
+  background-color: rgba(255, 255, 255, 0.9); /* color transparente */
+  width: 90%; /* para que la barra se extienda en todo el ancho de la pagina */
+  z-index: 1000; /* esto es para que la barra no valla atras del contenido */
+}
+
+/* email implementation. People who want to hire me would be able to contact me! :^) yay! */
+
+body {
+  font-family: Montserrat;
+}
+
+.services {
+  height: 120vh;
+  width: 60%;
+  background-color: #ced4da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px black;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 3px;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+textarea {
+  /* limit horizontal resicze of the mesage box */
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+  color: white;
+  background-color: black;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: greenyellow;
+  animation: status 3s ease delay forwards;
+}
+
+#status.error {
+  background-color: red;
+  color: white;
+  animation: status 3s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+#casa:hover {
+  color: black;
+  border-bottom: 5px solid black;
+}

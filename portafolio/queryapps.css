@@ -1,0 +1,116 @@
+/* rem and em do not depend on html font-size in media queries! */
+/*Instead we assume 1rem = 1em = 16px  */
+
+/* ***************************** */
+/* Below 1344px (Smaller desktops)*/
+/* ***************************** */
+
+@media (max-width: 84em) {
+  html {
+    /* 8px / 16 = 0.5 =50%  */
+    font-size: 50%;
+  }
+  .services h1 {
+    padding-top: 26rem;
+  }
+
+  .contenedor {
+    --width: 38rem;
+  }
+
+  nav ul li a {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    height: 13rem;
+  }
+  .logo {
+    font-size: 3rem;
+  }
+}
+
+/* ***************************** */
+/* Below 1200px (Landscape Tablets)*/
+/* ***************************** */
+
+@media (max-width: 75em) {
+  html {
+    /* 8px / 16 = 0.5 =50%  */
+    font-size: 50%;
+  }
+}
+
+/* ***************************** */
+/* Below 944px (Tablets)*/
+/* ***************************** */
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16 = 0.5 =50%  */
+    font-size: 50%;
+  }
+
+  .services {
+    width: 94%;
+  }
+}
+
+/* ***************************** */
+/* Below 704px (Smaller Tablets)*/
+/* ***************************** */
+
+@media (max-width: 44em) {
+  html {
+    /* 8px / 16 = 0.5 =50%  */
+    font-size: 50%;
+  }
+}
+
+/* ***************************** */
+/* Below 544px (Phones)*/
+/* ***************************** */
+
+@media (max-width: 34em) {
+  .logo {
+    font-size: 2.5rem;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+
+  nav {
+    height: 9rem;
+  }
+
+  section {
+    width: 166%;
+  }
+
+  .services {
+    width: 166%;
+    height: 92rem;
+  }
+
+  .services h1 {
+    padding-top: 32rem;
+  }
+
+  .mobile {
+    left: 5rem;
+  }
+}
+
+/* ***************************** */
+/* Below 320px (Phones)*/
+/* ***************************** */
+
+@media (max-width: 20em) {
+  .services {
+    width: 192%;
+  }
+
+  section {
+    width: 193%;
+  }
+}
